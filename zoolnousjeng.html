@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Restobar ZOOL</title>
+	<meta charset="utf-8">	
+	<link href="zoolnousj.css" rel="stylesheet" type="text/css" />
+	<a herf="http//www.restobarzool.com">	</a>
+	
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(45.56156250000001,-74.38020790000002);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+	
+</head>
+
+<body>
+	<header>
+		<div class="liens">				
+				<p class="lien1"> <a href="zoolnousj.html" style="color: #000;"> Français </a> </p>
+				<p class="lien"> <a href="https://www.facebook.com/Resto-Bar-Zool-1381154675480196/?fref=ts" target="_blanc"><img href="https://www.facebook.com/" src="/photo/facebook.png" width="40" height="40" alt="logo facebook"/></a> </p>
+				<p class="lien"> <a href="https://www.tripadvisor.ca/Restaurant_Review-g155025-d2516182-Reviews-Zool_Resto_Bar-Quebec.html" target="_blanc"><img href="https://fr.tripadvisor.ca/" src="/photo/tripadvisor.png" width="40" height="40" alt="logo tripadvisor"/></a> </p>				
+		</div>
+	</header>
+	
+	<section class="entete">
+		<img src="/photo/corner10.png" class="corner2">
+			<h1 class="titre"> Contact </h1>
+		<img src="/photo/corner11.png" class="corner1">
+	
+		<nav class="menu">
+					<ul id="menu-demo2">
+					<li><a href="/zoolacceuileng.html">Home</a>
+					</li>
+					<li><a href="/zoolmenueng.html">Menu</a>
+						<ul>
+							<li><a href="/zoolmenueng.html">Table d'hôte</a></li>
+							<li><a href="/zoolmenueng.html#carte">À la carte</a></li>
+							<li><a href="/zoolmenueng.html#buffet">Buffets</a></li>
+							<li><a href="/zoolmenueng.html#brunch">Brunchs</a></li>
+							<li><a href="/zoolmenueng.html#pizza">Pizza</a></li>
+						</ul>
+					</li>
+					<li><a href="/zoolaproposeng.html">About us</a>
+						<ul>
+							<li><a href="/zoolaproposeng.html#hisoire">History</a></li>
+							<li><a href="/zoolaproposeng.html#valeur">Values</a></li>
+							<li><a href="/zoolaproposeng.html#famille">Family</a></li>
+							<li><a href="/zoolaproposeng.html#activite">Activity</a></li>
+						</ul>
+					</li>
+					<li><a href="/zoolnousjeng.html">Contact</a>
+						<ul>
+						</ul>
+					</li>
+					</ul>
+				</nav>	
+	
+	</section>
+	
+		<nav class="logo">
+					<img class="logoo" id="logoo" src="/photo/zoollogo1.gif" alt="image logo"/>	
+		</nav>
+				
+	
+	<section class="bande">
+		<div class="slider">	
+			<figure>
+				<div class="slide">
+					<img src="/photo/slide1.jpg">
+				</div>
+				
+				<div class="slide">	
+					<img src="/photo/slide2.jpg">
+				</div>
+				
+				<div class="slide">	
+					<img src="/photo/slide3.jpg">
+				</div>
+				
+				<div class="slide">	
+					<img src="/photo/slide4.jpg">
+				</div>
+				
+				<div class="slide">	
+					<img src="/photo/slide5.jpg">
+				</div>
+			</figure>	
+		</div> 
+	</section>	
+		
+	<section class="text">	
+		<div class="leftside">
+			<article class="article2">
+				<h2 id="ouverture" class="centretitre2">  Business hours </h2>
+				<h2 class="day"> Monday </h2>	<p class="ferme">: Closed </p>
+				<h2 class="day"> Tuesday </h2>	<p class="ferme">: Closed </p>
+				<h2 class="day"> <strong>Wednesday</strong> </h2> <p>À la carte : 16h à-21h </p>
+				<h2 class="day"> <strong>Thursday</strong> </h2> <p> Midi express : 11h30-14h </br> À la carte : 16h-21h </p>
+				<h2 class="day"> <strong>Friday</strong> </h2> <p> Midi express : 11h30-14h </br> À la carte 16h-22h </p>
+				<h2 class="day"> <strong>Saturday</strong> </h2> <p> <strong>Midi</strong> express : 11h30-14h </br> <strong>Buffet</strong> : 16h-22h </p>
+				<h2 class="day"> <strong>Sunday</strong> </h2> <p> <strong>Brunch</strong> : 10h30-14h </br> À la carte: 16h-21h </p>
+				
+			</article>
+			
+			
+			
+		</div>
+		
+		<div class="rightside"
+			<article class="article5">
+				<h2 id="emploie" class="centretitre5">  Contact informations </h2> 
+				<!-- http://www.w3schools.com/googleapi/google_maps_basic.asp -->
+				<p><b>Address</b> :    695 chemin des Outaouais,</br> <strong>Pointe-Fortune</strong>, Québec,</br> J0P 1N0 </p>
+				<p><b>Email</b> : zoolresto@gmail.com </p>
+				<p><b>Phone number</b> : 450-451-4127 </p>
+				<div class="googleMap" id="googleMap" ></div>
+			</article>
+		</div>
+		
+	<!--			<article class="article4">
+				<h1 id="fidele" class="centretitre4">  Carte Fid </h1> 
+				<p> à voir  </p>	
+			</article>
+	-->
+		
+		
+		
+		
+	</section>
+	
+
+</body>
+
+<footer>
+ <p> © 2016 <strong>Resto-bar Zool</strong> </p>
+</footer>
+
+</html>
